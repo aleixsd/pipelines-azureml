@@ -72,7 +72,7 @@ steps:
 
 # Add potential automated tests
 
-#- task: AzureCLI@2
+- task: AzureCLI@2
   displayName: 'Create AKS cluster'
   inputs:
     azureSubscription: $(ml-ws-connection)
