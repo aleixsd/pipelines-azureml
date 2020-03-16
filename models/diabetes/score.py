@@ -11,7 +11,7 @@ def init():
     model = joblib.load(model_path)
 	
 
-def run(data):
+def run(raw_data):
     try:
         
 	data = json.loads(raw_data)["data"]
