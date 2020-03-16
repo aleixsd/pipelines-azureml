@@ -3,9 +3,6 @@ from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 from sklearn.externals import joblib
-import azureml.core
-from azureml.core import Workspace, Experiment, ScriptRunConfig
-from azureml.core.environment import Environment
 import pandas as pd
 import os
 
