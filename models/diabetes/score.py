@@ -13,7 +13,10 @@ def init():
 
 def run(data):
     try:
-        result = model.predict(data)
+        
+	data = json.loads(raw_data)["data"]
+	data = numpy.array(data)
+	result = model.predict(data)
         # you can return any datatype as long as it is JSON-serializable
         return result.tolist()
     except Exception as e:
